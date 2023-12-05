@@ -72,14 +72,14 @@ CREATE TABLE `commande` (
   `codecde` varchar(50) NOT NULL,
   `datecde` date NOT NULL,
   `codecli` int(11) NOT NULL,
-  `statutcde` ENUM('passee','validee','envoyee','supprimee') NOT NULL, 
+  `statutcde` ENUM('passee','validee','envoyee','supprimee') NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `commande`
 --
 
-INSERT INTO `commande` (`codecde`, `datecde`, `codecli`) VALUES
+INSERT INTO `commande` (`codecde`, `datecde`, `codecli`,`statutcde`) VALUES
 ('CDE001', '2023-08-01', 1,'passee'),
 ('CDE002', '2023-08-02', 2,'passee'),
 ('CDE003', '2023-08-02', 3,'passee'),
